@@ -2,13 +2,27 @@ body {
 padding: 50px;
 }
 
-.box {
-display: inline-block;
-background: blue;
-width: 200px;
-height: 200px;
+h1 {
+text-align: center;
+font-family: cursive;
+font-size: 25px;
 }
 
-.box:hover {
-transform: translate(200px,150px)rotate(50deg);
+.trigger {
+  width: 200px;
+  height: 200px;
+  border: 20px solid white;
+}
+
+.box {
+display: inline-block;
+background: pink;
+width: 200px;
+height: 200px;
+transition: 2s ease-in-out;
+pointer-events: none;
+}
+
+.trigger:hover .box {
+transform: translate(400px,150px)rotate(360deg);
 }
